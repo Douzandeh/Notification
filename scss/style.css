@@ -31,6 +31,30 @@
   opacity: 0;
   -webkit-transition: opacity 0.1s ease-out;
   transition: opacity 0.1s ease-out;
+  -webkit-animation: animate .9s ease-out infinite alternate;
+          animation: animate .9s ease-out infinite alternate;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
 }
 
 .container .notify.add-numb::before {
